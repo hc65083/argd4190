@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Somelist';
+  src: "../fonts/Somelist/Somelist.otf";
+  font-style: normal;
+}
 html,body {
     background-color: rgb(255, 219, 219);
     margin:4vw;
@@ -39,8 +44,4 @@ a:hover {
     color:rgb(236, 136, 136);
 }
 
-@font-face {
-  font-family: 'Somelist';
-  src: "../fonts/Somelist/Somelist.otf";
-  font-style: normal;
-}
+
