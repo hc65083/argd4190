@@ -11,6 +11,7 @@ html,body {
 h1 {
     font-size:40px;
     font-family: "Somelist", sans-serif;
+    color: rgb(255, 240, 222);
 }
 
 h2 {
