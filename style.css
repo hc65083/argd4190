@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Somelist';
-  src: "../fonts/Somelist/Somelist.otf";
-  font-style: normal;
+  font-family: "Somelist";
+  src: url("Somelist.ttf") format("truetype");
 }
+
 html,body {
     background-color: rgb(255, 219, 219);
     margin:4vw;
@@ -10,7 +10,7 @@ html,body {
 
 h1 {
     font-size:40px;
-    font-family:'Somelist', sans-serif;
+    font-family: "Somelist", sans-serif;
 }
 
 h2 {
