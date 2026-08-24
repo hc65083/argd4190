@@ -5,6 +5,7 @@ html,body {
 
 h1 {
     font-size:40px;
+    font-family:'Somelist', sans-serif;
 }
 
 h2 {
@@ -36,4 +37,10 @@ a {
 
 a:hover {
     color:rgb(236, 136, 136);
+}
+
+@font-face {
+  font-family: 'Somelist';
+  src: "../Somelist/Somelist.otf";
+  font-style: normal;
 }
