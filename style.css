@@ -30,3 +30,10 @@ button:hover {
     background-color:rgb(46, 25, 4);
     color:rgb(235, 198, 133);
 }
+a {
+    color:rgb(46, 25, 4);
+}
+
+a:hover {
+    color:rgb(236, 136, 136);
+}
