@@ -25,11 +25,15 @@ h2 {
     color: rgb(255, 240, 222);
 }
 
+nav {
+    margin-top: -5vw;
+    
+}
+
 nav div {
     background-color: bisque;
     border-radius:2vw;;
     height:1em;
-    max-height:20px;
     display: flex;
     gap:5vw;
     padding: 5vw;
