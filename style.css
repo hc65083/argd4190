@@ -30,7 +30,7 @@ nav {
 }
 
 nav div {
-    background-color: bisque;
+    background-color: rgb(255, 224, 171);
     border-radius:2vw;;
     height:1em;
     display: flex;
@@ -61,7 +61,7 @@ button {
     border-radius:2vw;;
     padding: 12px;
     color:rgb(46, 25, 4);
-    background-color:rgb(235, 198, 133);
+    background-color:rgb(255, 224, 171);
 }
 
 button:hover {
