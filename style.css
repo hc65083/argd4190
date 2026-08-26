@@ -9,20 +9,20 @@
 }
 
 html,body {
-    background-color: rgb(255, 219, 219);
+    background-color: rgb(186, 245, 255);
     margin:4vw;
 }
 
 h1 {
     font-size:60px;
     font-family: "Somelist", ui-rounded;
-    color: rgb(215, 73, 113);
+    color: rgb(240, 91, 134);
 }
 
 h2 {
     font-size:40px;
     font-family: "Somelist", ui-rounded;
-    color: rgb(215, 73, 113);
+    color: rgb(240, 91, 134);
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
 
 nav div {
     background-color: rgb(255, 224, 171);
-    border: 3px solid rgb(215, 73, 113);
+    border: 3px solid rgb(240, 91, 134);
     border-radius:2vw;
     height:1em;
     display: flex;
@@ -76,7 +76,7 @@ button {
     color:rgb(46, 25, 4);
     font-family: "Berry", ui-rounded;
     background-color:rgb(255, 224, 171);
-    border: 3px solid rgb(215, 73, 113);
+    border: 3px solid rgb(240, 91, 134);
     min-height: 70px;
     min-width: 120px;
 }
@@ -91,7 +91,7 @@ a,p {
 }
 
 a:hover {
-    color: rgb(215, 73, 113);
+    color:rgb(240, 91, 134);
 }
 
 #slideshow img {
