@@ -26,6 +26,10 @@ nav div {
     gap:5vw;
 }
 
+header {
+    margin-top: 7vw;
+}
+
 p {
     font-size:25px;
 }
