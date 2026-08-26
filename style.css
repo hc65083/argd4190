@@ -50,5 +50,8 @@ a:hover {
 #slideshow img {
     height: 20vw;
     width: auto;
+}
+
+#slideshow  {
     margin-top: 5vw;
 }
