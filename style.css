@@ -28,8 +28,8 @@ h2 {
 nav div {
     background-color: bisque;
     border-radius:2vw;;
-    height:1vw;
-    
+    height:1em;
+    max-height:20px;
     display: flex;
     gap:5vw;
     padding: 5vw;
@@ -38,7 +38,7 @@ nav div {
 
 nav p {
     font-family: "Berry", ui-rounded;
-    font-size:1.5em;
+    font-size:1.7em;
 }
 
 header {
