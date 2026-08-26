@@ -54,6 +54,7 @@ p {
 
 button {
     font-size:20px;
+    border-radius:2vw;;
     padding: 12px;
     color:rgb(46, 25, 4);
     background-color:rgb(235, 198, 133);
