@@ -59,13 +59,15 @@ p {
 }
 
 button {
-    font-size:1.5vw;
+    font-size:1em;
     border-radius:2vw;;
     padding: 2vw;
     color:rgb(46, 25, 4);
     font-family: "Berry", ui-rounded;
     background-color:rgb(255, 224, 171);
     border: 3px solid rgb(215, 73, 113);
+    min-height: 70px;
+    min-width: 120px;
 }
 
 button:hover {
