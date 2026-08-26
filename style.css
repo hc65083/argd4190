@@ -27,6 +27,7 @@ h2 {
 
 nav {
     margin-top: -5vw;  
+    
 }
 
 nav div {
@@ -36,7 +37,7 @@ nav div {
     height:1em;
     display: flex;
     gap:5vw;
-    padding: 5vw;
+    padding: 3vw 3vw 3vw 5vw;
     align-items:center;
 }
 
@@ -46,7 +47,7 @@ nav p {
 }
 
 header {
-    margin-top: 10vw;
+    margin-top: 20vw;
 }
 
 header button{
