@@ -10,7 +10,7 @@ html,body {
 
 h1 {
     font-size:40px;
-    font-family: "Somelist", sans-serif;
+    font-family: "Somelist", ui-rounded;
     color: rgb(255, 240, 222);
 }
 
