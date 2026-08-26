@@ -3,6 +3,11 @@
   src: url("fonts/Somelist/Somelist.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Berry";
+  src: url("fonts/berry/Berry Cute.otf") format("truetype");
+}
+
 html,body {
     background-color: rgb(255, 219, 219);
     margin:4vw;
@@ -24,6 +29,10 @@ nav div {
     font-size:30px;
     display: flex;
     gap:5vw;
+}
+
+nav p {
+    font-family: "Berry", ui-rounded;
 }
 
 header {
