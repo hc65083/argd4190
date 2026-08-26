@@ -40,6 +40,7 @@ nav div {
     gap:5vw;
     padding: 3vw 3vw 3vw 5vw;
     align-items:center;
+    flex-wrap: wrap;
 }
 
 nav p {
