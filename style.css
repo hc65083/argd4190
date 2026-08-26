@@ -45,4 +45,7 @@ a:hover {
     color:rgb(236, 136, 136);
 }
 
-
+#slideshow img {
+    height: 30px;
+    width: auto;
+}
