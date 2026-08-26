@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Somelist";
-  src: url("/fonts/Somelist/Somelist.ttf") format("truetype");
+  src: url("fonts/Somelist/Somelist.ttf") format("truetype");
 }
 
 html,body {
