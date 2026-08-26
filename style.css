@@ -48,6 +48,10 @@ header {
     margin-top: 10vw;
 }
 
+header button{
+    margin-top: 3vw;
+}
+
 p {
     font-size:25px;
 }
