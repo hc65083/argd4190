@@ -16,13 +16,13 @@ html,body {
 h1 {
     font-size:60px;
     font-family: "Somelist", ui-rounded;
-    color: rgb(255, 240, 222);
+    color: rgb(215, 73, 113);
 }
 
 h2 {
     font-size:40px;
     font-family: "Somelist", ui-rounded;
-    color: rgb(255, 240, 222);
+    color: rgb(215, 73, 113);
 }
 
 nav {
@@ -64,6 +64,7 @@ button:hover {
     background-color:rgb(46, 25, 4);
     color:rgb(235, 198, 133);
 }
+
 a,p {
     color:rgb(46, 25, 4);
 }
