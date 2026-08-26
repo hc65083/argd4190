@@ -61,6 +61,7 @@ button {
     border-radius:2vw;;
     padding: 12px;
     color:rgb(46, 25, 4);
+    font-family: "Berry", ui-rounded;
     background-color:rgb(255, 224, 171);
 }
 
