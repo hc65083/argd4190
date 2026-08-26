@@ -26,8 +26,7 @@ h2 {
 }
 
 nav {
-    margin-top: -5vw;
-    
+    margin-top: -5vw;  
 }
 
 nav div {
@@ -78,5 +77,5 @@ a:hover {
 }
 
 #slideshow  {
-    margin-top: 5vw;
+    margin-top: 10vw;
 }
