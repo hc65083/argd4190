@@ -20,7 +20,7 @@ h2 {
     color: rgb(255, 240, 222);
 }
 
-nav ul {
+nav div {
     font-size:30px;
     display: flex;
     gap:5vw;
