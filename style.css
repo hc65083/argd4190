@@ -25,14 +25,10 @@ h2 {
     color: rgb(255, 240, 222);
 }
 
-nav {
-    width:100em;
-}
-
 nav div {
     background-color: bisque;
     border-radius:2vw;;
-    height:30px;
+    height:20px;
     font-size:30px;
     display: flex;
     gap:5vw;
@@ -45,7 +41,7 @@ nav p {
 }
 
 header {
-    margin-top: 15vw;
+    margin-top: 10vw;
 }
 
 p {
