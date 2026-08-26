@@ -37,7 +37,7 @@ button:hover {
     background-color:rgb(46, 25, 4);
     color:rgb(235, 198, 133);
 }
-a {
+a,p {
     color:rgb(46, 25, 4);
 }
 
