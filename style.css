@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "Berry";
-  src: url("fonts/berry/Berry Cute.otf") format("truetype");
+  font-family: "Choco";
+  src: url("fonts/choco.otf") format("truetype");
 }
 
 html,body {
@@ -44,7 +44,7 @@ nav div {
 }
 
 nav p {
-    font-family: "Berry", ui-rounded;
+    font-family: "Choco", ui-rounded;
     font-size:1.7em;
     margin-top: -1vw;
 }
@@ -66,15 +66,15 @@ header button{
 
 p {
     font-size:25px;
-    font-family: national-park, sans-serif;
+    font-family: "Choco", sans-serif;
 }
 
 button {
     font-size:1.5em;
-    border-radius:2vw;;
+    border-radius:2vw;
     padding: 2vw;
     color:rgb(46, 25, 4);
-    font-family: "Berry", ui-rounded;
+    font-family: "Choco", ui-rounded;
     background-color:rgb(255, 224, 171);
     border: 3px solid rgb(240, 91, 134);
     min-height: 70px;
