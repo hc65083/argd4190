@@ -84,6 +84,9 @@ button {
     border: 3px solid rgb(240, 91, 134);
     min-height: 70px;
     min-width: 120px;
+    display: flex;
+    align-items: center;
+
 }
 
 button:hover {
