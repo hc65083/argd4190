@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    font-size:6vw;
+    font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
     font-family: "Somelist", ui-rounded;
     color: rgb(240, 91, 134);
 }
