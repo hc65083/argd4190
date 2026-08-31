@@ -39,7 +39,7 @@ nav div {
     height:1em;
     display: flex;
     gap:5vw;
-    padding: 3vw 3vw 3vw 5vw;
+    padding: 3vw 3vw 3vw 3vw;
     align-items:center;
     flex-wrap: wrap;
 }
