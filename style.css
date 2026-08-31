@@ -87,7 +87,7 @@ p {
 }
 
 button {
-    width:200px;
+    width: 10vw;
     font-size: clamp(1.5rem, 2vw + 0.5rem, 3rem);
     border-radius:2vw;
     padding: 6%;
