@@ -14,7 +14,7 @@ html,body {
 }
 
 h1 {
-    font-size:60px;
+    font-size:10vw;
     font-family: "Somelist", ui-rounded;
     color: rgb(240, 91, 134);
 }
@@ -45,13 +45,13 @@ nav div {
 
 nav p {
     font-family: "Choco", ui-rounded;
-    font-size:4em;
+    font-size:4vw;
     margin-top: -2vw;
 }
 
 nav img {
-    width: 50px;
-    height:50px;
+    width: 8vw;
+    height:8vw;
     margin-top: -3vw;
     object-fit: contain;
 }
@@ -70,12 +70,12 @@ header p{
 
 
 p {
-    font-size:4em;
+    font-size:4vw;
     font-family: "Choco", sans-serif;
 }
 
 button {
-    font-size:4em;
+    font-size:4vw;
     border-radius:2vw;
     padding: 2vw;
     color:rgb(46, 25, 4);
