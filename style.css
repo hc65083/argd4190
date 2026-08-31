@@ -77,7 +77,7 @@ header button{
 
 header p{
     margin-top: -1vw;
-    font-size: clamp(3rem, 5vw + 0.5rem, 4rem);
+    font-size: clamp(2.5rem, 3vw + 0.5rem, 4rem);
 }
 
 
