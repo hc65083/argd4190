@@ -59,7 +59,7 @@ nav img {
     object-fit: contain;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
     nav div {
         border-radius:2vw;
         height:15vw;
@@ -91,16 +91,24 @@ button {
     height:6vw;
     font-size: clamp(1.5rem, 2vw + 0.5rem, 3rem);
     border-radius:2vw;
-    padding: 6%;
+    padding: 5vw 5vw 3rem 4rem;
     color:rgb(46, 25, 4);
     font-family: "Choco", ui-rounded;
     background-color:rgb(255, 224, 171);
     border: 3px solid rgb(240, 91, 134);
-    max-height: 70px;
+    max-height: 20px;
     min-width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 750px) {
+        button {
+            padding: 5vw 5vw 5vw 4rem;
+            height:15vw;
+            gap:8vw;
+        }
+    }
 }
 
 button p {
