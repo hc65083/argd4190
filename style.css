@@ -20,18 +20,15 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 2.5rem);
     font-family: "Somelist", ui-rounded;
     color: rgb(240, 91, 134);
 }
 
-nav {
+nav div {
     margin-top: -5vw;  
     margin-left: -3vw; 
     margin-right: -3vw; 
-}
-
-nav div {
     background-color: rgb(255, 224, 171);
     border: 3px solid rgb(240, 91, 134);
     line-height: 1vw;
@@ -47,7 +44,6 @@ nav div {
 nav p {
     font-family: "Choco", ui-rounded;
     font-size: clamp(3rem, 3vw + 0.5rem, 4rem);
-    margin-top: -2vw;
 }
 
 nav img {
@@ -55,8 +51,9 @@ nav img {
     max-width: 50px;
     height:8vw;
     max-height: 50px;
-    margin-top: -3vw;
     object-fit: contain;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -91,28 +88,27 @@ button {
     height:6vw;
     font-size: clamp(1.5rem, 2vw + 0.5rem, 3rem);
     border-radius:2vw;
-    padding: 5vw 5vw 3rem 4rem;
+    padding: 2vw 2vw 2vw 2vw;
     color:rgb(46, 25, 4);
     font-family: "Choco", ui-rounded;
     background-color:rgb(255, 224, 171);
     border: 3px solid rgb(240, 91, 134);
-    max-height: 20px;
-    min-width: 150px;
+    min-height: 50px;
+    min-width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: 750px) {
         button {
-            padding: 5vw 5vw 5vw 4rem;
+            padding: 5vw 5vw 5vw 5vw;
             height:15vw;
-            gap:8vw;
         }
     }
 }
 
 button p {
-    font-size: clamp(4rem, 5vw + 0.5rem, 7rem);
+    font-size: clamp(3rem, 4rem + 0.5rem, 5rem);
     font-family: "Choco", sans-serif;
 }
 
@@ -133,8 +129,9 @@ a:hover {
 #slideshow img {
     height: 20vw;
     width: auto;
+    margin-top: 4vw;
 }
 
 #slideshow  {
-    margin-top: 15vw;
+    margin-top: 8vw;
 }
