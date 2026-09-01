@@ -41,12 +41,27 @@ nav div {
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 750px) {
+    nav div {
+        border-radius:2vw;
+        height:10vw;
+        gap:8vw;
+    }
+    
+    nav img {
+        margin-top: 0vw; 
+    }
+
+}
+
 nav p {
     font-family: "Choco", ui-rounded;
+    margin-top: -2.5vw; 
     font-size: clamp(3rem, 3vw + 0.5rem, 4rem);
 }
 
 nav img {
+    margin-top: -1vw; 
     width: 8vw ;
     max-width: 50px;
     height:8vw;
@@ -56,13 +71,6 @@ nav img {
     align-items: center;
 }
 
-@media screen and (max-width: 750px) {
-    nav div {
-        border-radius:2vw;
-        height:15vw;
-        gap:8vw;
-    }
-}
 
 header {
     margin-top: 13vw;
