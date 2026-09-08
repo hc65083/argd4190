@@ -147,7 +147,9 @@ a:hover {
 #window {
     margin-top: 5vw;
     min-height: 400px;
+    height: 50vw;
     min-width:300px;
+    width:85vw;
     border-radius:3vw;
     background-color: beige;
 }
