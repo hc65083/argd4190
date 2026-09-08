@@ -143,3 +143,11 @@ a:hover {
 #slideshow  {
     margin-top: 8vw;
 }
+
+#window {
+    margin-top: 5vw;
+    min-height: 400px;
+    min-width:300px;
+    border-radius:3vw;
+    background-color: beige;
+}
