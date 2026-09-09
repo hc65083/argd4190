@@ -1,26 +1,59 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="200" height="200" fill="white"/>
-<path d="M70.9873 29.5619L113.123 73.5137H28.8516L70.9873 29.5619Z" fill="#D9D9D9"/>
-<path d="M129.371 29.5619L171.507 73.5137H87.235L129.371 29.5619Z" fill="#D9D9D9"/>
-<rect x="16.5349" y="84.1651" width="77.114" height="17.7059" transform="rotate(-45 16.5349 84.1651)" fill="#FFDCF5"/>
-<rect x="99.1357" y="59.8723" width="42.7588" height="17.7059" transform="rotate(-45 99.1357 59.8723)" fill="#FFDCF5"/>
-<rect x="82.3707" y="40.9563" width="42.7588" height="17.7059" transform="rotate(45 82.3707 40.9563)" fill="#FFDCF5"/>
-<rect x="129.371" y="29.5619" width="76.838" height="17.7059" transform="rotate(45 129.371 29.5619)" fill="#FFDCF5"/>
-<path d="M100.896 156.76L152.816 104.873H48.9772L100.896 156.76Z" fill="#FFDCF5"/>
-<path d="M100 170.438L176.356 91.7019H23.6439L100 170.438Z" fill="#FFDCF5"/>
-<path d="M73.3794 45.0315L113.496 86.8773H33.2626L73.3794 45.0315Z" fill="#D9D9D9"/>
-<path d="M128.965 45.0315L169.082 86.8773H88.8485L128.965 45.0315Z" fill="#D9D9D9"/>
-<rect x="31.2793" y="87.2751" width="59.64" height="16.8575" transform="rotate(-45 31.2793 87.2751)" fill="#FF7575"/>
-<rect x="100.179" y="73.8896" width="40.71" height="16.8575" transform="rotate(-45 100.179 73.8896)" fill="#FF7575"/>
-<rect x="84.2173" y="55.88" width="40.71" height="16.8575" transform="rotate(45 84.2173 55.88)" fill="#FF7575"/>
-<rect x="129.329" y="68.1642" width="42.6588" height="16.8575" transform="rotate(45 129.329 68.1642)" fill="#89FFF5"/>
-<rect x="85.2994" y="80.8791" width="42.6588" height="16.8575" transform="rotate(135 85.2994 80.8791)" fill="#89FFF5"/>
-<rect x="129.329" y="92.0042" width="23.3757" height="16.8575" transform="rotate(135 129.329 92.0042)" fill="#89FFF5"/>
-<rect x="85.3859" y="104.528" width="26.0724" height="16.8575" transform="rotate(135 85.3859 104.528)" fill="#6055FF"/>
-<rect x="85.3859" y="104.528" width="26.0724" height="16.8575" transform="rotate(135 85.3859 104.528)" fill="#9BA8FB"/>
-<rect x="135.845" y="122.169" width="25.9485" height="16.8575" transform="rotate(-135 135.845 122.169)" fill="#9BA8FB"/>
-<rect x="95.5288" y="125.825" width="32.3094" height="16.8575" transform="rotate(-45 95.5288 125.825)" fill="#9BA8FB"/>
-<rect x="84.6027" y="103.814" width="40.1581" height="16.8575" transform="rotate(45 84.6027 103.814)" fill="#9BA8FB"/>
-<rect x="100.992" y="120.362" width="40.1036" height="16.8575" transform="rotate(-135 100.992 120.362)" fill="#89FFF5"/>
-<rect x="128.965" y="45.0315" width="59.64" height="16.8575" transform="rotate(45 128.965 45.0315)" fill="#FF7575"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 167.17 140.8">
+  <!-- Generator: Adobe Illustrator 30.8.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: #d9d9d9;
+      }
+
+      .st2 {
+        fill: #ffdcf5;
+      }
+
+      .st3 {
+        fill: #89fff5;
+      }
+
+      .st4 {
+        fill: #9ba8fb;
+      }
+
+      .st5 {
+        fill: #ff7575;
+      }
+
+      .st6 {
+        fill: #6055ff;
+      }
+    </style>
+  </defs>
+  <rect class="st0" x="-16.53" y="-29.64" width="200" height="200"/>
+  <path class="st1" d="M54.45-.08l42.14,43.95H12.32L54.45-.08Z"/>
+  <path class="st1" d="M112.84-.08l42.14,43.95h-84.27L112.84-.08Z"/>
+  <rect class="st2" x="-5.03" y="24.67" width="77.11" height="17.71" transform="translate(-13.89 33.52) rotate(-45)"/>
+  <rect class="st2" x="82.6" y="12.52" width="42.76" height="17.71" transform="translate(15.34 79.79) rotate(-45)"/>
+  <rect class="st2" x="65.84" y="11.32" width="17.71" height="42.76" transform="translate(-1.24 62.39) rotate(-45)"/>
+  <rect class="st2" x="124.89" y="-5.07" width="17.71" height="76.84" transform="translate(15.59 104.34) rotate(-45)"/>
+  <path class="st2" d="M84.36,127.12l51.92-51.89H32.44l51.92,51.89Z"/>
+  <path class="st2" d="M83.47,140.8l76.36-78.74H7.11l76.36,78.74Z"/>
+  <path class="st1" d="M56.84,15.39l40.12,41.85H16.73L56.84,15.39Z"/>
+  <path class="st1" d="M112.43,15.39l40.12,41.85h-80.23L112.43,15.39Z"/>
+  <rect class="st5" x="11.97" y="34.08" width="59.64" height="16.86" transform="translate(-17.82 42) rotate(-45)"/>
+  <rect class="st5" x="83.64" y="27.39" width="40.71" height="16.86" transform="translate(5.13 84.03) rotate(-45)"/>
+  <rect class="st5" x="67.69" y="26.24" width="16.86" height="40.71" transform="translate(-10.65 67.47) rotate(-45)"/>
+  <rect class="st3" x="113.49" y="38.24" width="16.86" height="42.66" transform="translate(-6.41 103.66) rotate(-45)"/>
+  <rect class="st3" x="26.39" y="51.94" width="42.66" height="16.86" transform="translate(-28.71 51.42) rotate(-45)"/>
+  <rect class="st3" x="86.88" y="56.24" width="23.38" height="16.86" transform="translate(-16.86 88.64) rotate(-45)"/>
+  <rect class="st6" x="40.64" y="69.72" width="26.07" height="16.86" transform="translate(-39.54 60.84) rotate(-45)"/>
+  <rect class="st4" x="40.64" y="69.72" width="26.07" height="16.86" transform="translate(-39.54 60.84) rotate(-45)"/>
+  <rect class="st4" x="107.67" y="64.42" width="16.86" height="25.95" transform="translate(-20.72 104.76) rotate(-45)"/>
+  <rect class="st4" x="80.22" y="82.3" width="32.31" height="16.86" transform="translate(-35.92 94.72) rotate(-45)"/>
+  <rect class="st4" x="67.88" y="74.26" width="16.86" height="40.16" transform="translate(-44.36 81.59) rotate(-45)"/>
+  <rect class="st3" x="67.81" y="50.53" width="16.86" height="40.1" transform="translate(-27.58 74.58) rotate(-45)"/>
+  <rect class="st5" x="119.13" y="12.62" width="16.86" height="59.64" transform="translate(7.35 102.63) rotate(-45)"/>
 </svg>
