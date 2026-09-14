@@ -28,4 +28,4 @@ for (let i = 0; i < MBTIBuilds.length; i++) {
     //hi
 }
 
-document.getElementById("slideshow")
+//document.getElementById("slideshow").innerHTML
