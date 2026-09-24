@@ -24,6 +24,19 @@
             margin-bottom:  1vw;
         }
 
+        p {
+            margin-top:  1vw;
+            margin-bottom:  1vw;
+            font-size: clamp(5px, 0.5vw + 0.1rem, 10px);
+        }
+
+        #head {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+        }
+
         #frame {
             position: relative;
             width: 100%;
@@ -47,12 +60,15 @@
 <body>
     <main id="editor">
         <h1>Customize a Collage</h1>
-        <input type="file" id="img" accept="image/*" multiple hidden>
-        <button type="button" id="add-image">Add images</button>
-        <label for="image-picker"> Selected Image: </label>
-        <select id="image-picker" disabled>
-            <option value="">No images added</option>
-        </select>
+        <div id="head">
+            <input type="file" id="img" accept="image/*" multiple hidden>
+            <button type="button" id="add-image">Add images</button>
+            <p for="image-picker"> Selected Image: </p>
+            <select id="image-picker" disabled>
+                <option value="">No images added</option>
+            </select>
+        </div>
+
         <fieldset id="controls" disabled>
             <h2>Image Adjustments</h2>
             <h2>X <input id="x" type="range" min="-300" max="300" value="0"></h2>
@@ -61,8 +77,9 @@
             <h2>Skew X <input id="skewX" type="range" min="-45" max="45" value="0"></h2>
             <h2>Skew Y <input id="skewY" type="range" min="-45" max="45" value="0"></h2>
         </fieldset>
+
         <p id="status" role="status"></p>
-        <div id="frame" role="region" aria-label="Poster preview"></div>
+        <div id="frame" role="region"></div>
     </main>
 
     <script>
