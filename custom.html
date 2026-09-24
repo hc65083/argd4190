@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Collage</title>
     <style>
+
         #controls { 
             gap: 2px; margin: 16px 0; 
             max-width:700px;
@@ -13,6 +14,7 @@
             flex-wrap: wrap;
             justify-content: center;
             border: 2px solid #2563eb;
+            margin-top:2vw;
         }
 
         #controls h2 { 
@@ -41,6 +43,10 @@
             gap: 2vw;
         }
 
+       #controls, #frame {
+            margin-inline: auto;
+       }
+
         #frame {
             position: relative;
             aspect-ratio: 3 / 2;
@@ -63,17 +69,15 @@
 </head>
 
 <body>
-    <main id="editor">
-        <h1>Customize a Collage</h1>
-        <div id="head">
-            <input type="file" id="img" accept="image/*" multiple hidden>
-            <button type="button" id="add-image">Add images</button>
-            <p for="image-picker"> Selected Image: </p>
-            <select id="image-picker" disabled>
-                <option value="">No images added</option>
-            </select>
-        </div>
-
+    <h1>Customize a Collage</h1>
+    <div id="head">
+        <input type="file" id="img" accept="image/*" multiple hidden>
+        <button type="button" id="add-image">Add images</button>
+        <p for="image-picker"> Selected Image: </p>
+        <select id="image-picker" disabled>
+            <option value="">No images added</option>
+        </select>
+    </div>
         <fieldset id="controls" disabled>
             <h2>X <input id="x" type="range" min="-300" max="300" value="0"></h2>
             <h2>Y <input id="y" type="range" min="-300" max="300" value="0"></h2>
@@ -81,10 +85,9 @@
             <h2>Skew X <input id="skewX" type="range" min="-45" max="45" value="0"></h2>
             <h2>Skew Y <input id="skewY" type="range" min="-45" max="45" value="0"></h2>
         </fieldset>
-
+    
         <p id="status" role="status"></p>
         <div id="frame" role="region"></div>
-    </main>
 
     <script>
         const upload = document.getElementById("img");
