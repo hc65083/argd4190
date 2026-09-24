@@ -9,32 +9,35 @@
             gap: 2px; margin: 16px 0; 
             max-width:700px;
             max-height: 300px;
+            display: flex;
+            flex-wrap: row;
+            justify-content: center;
         }
 
         #controls h2 { 
             align-items: center;
             margin-top: 1vw;
-            font-size: clamp(5px, 1vw + 0.5rem, 15px);
+            font-size: clamp(5px, 1vw + 0.5rem, 20px);
         }
 
-        button { 
+        button, #image-picker { 
             max-width:150px;
-            max-height: 20px;
+            max-height: 40px;
             margin-top:  1vw;
             margin-bottom:  1vw;
+            line-height:  1vw;
         }
 
         p {
             margin-top:  1vw;
             margin-bottom:  1vw;
-            font-size: clamp(5px, 0.5vw + 0.1rem, 10px);
+            font-size: 6px;
         }
 
         #head {
             display: flex;
-            flex-direction: row;
             align-items: center;
-            gap: 12px;
+            gap: 2vw;
         }
 
         #frame {
@@ -44,6 +47,7 @@
             border: 2px solid #2563eb;
             max-width:700px;
         }
+
         .object {
             position: absolute;
             left: 50%;
