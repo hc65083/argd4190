@@ -1,63 +1,172 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customize your own Poster</title>
-</head>
-<body>
-    <div id="editor">
-    <div id="img" class="object"></div>
-    <button> Add an image <id="button"></button>
-    <label>X <input id="x" type="range" min="-300" max="300"></label>
-    <label>Y <input id="y" type="range" min="-300" max="300"></label>
-    <label>Scale <input id="scale" type="range" min="0.1" max="3" step="0.1" value="1"></label>
-    <label>Skew X <input id="skewX" type="range" min="-45" max="45"></label>
-    <label>Skew Y <input id="skewY" type="range" min="-45" max="45"></label>
-    </div>
-
+    <title>Custom Collage</title>
     <style>
-        #editor {
-            position: relative;
-            width: 600px;
-            height: 400px;
-            border: 1px solid #ccc;
+        #controls { 
+            gap: 2px; margin: 16px 0; 
+            max-width:700px;
+            max-height: 300px;
         }
 
+        #controls h2 { 
+            align-items: center;
+            margin-top: 1vw;
+            font-size: clamp(5px, 1vw + 0.5rem, 15px);
+        }
+
+        button { 
+            max-width:150px;
+            max-height: 20px;
+            margin-top:  1vw;
+            margin-bottom:  1vw;
+        }
+
+        #frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            border: 2px solid #2563eb;
+            max-width:700px;
+        }
         .object {
             position: absolute;
             left: 50%;
             top: 50%;
+            max-width: 60%;
+            max-height: 60%;
             transform-origin: center;
-            background: red;
-            color: white;
-            padding: 20px;
         }
+        .object.selected { outline: 2px solid #2563eb; outline-offset: 3px; }
+        .object:focus-visible { outline: 3px dashed #2563eb; }
     </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="editor">
+        <h1>Customize a Collage</h1>
+        <input type="file" id="img" accept="image/*" multiple hidden>
+        <button type="button" id="add-image">Add images</button>
+        <label for="image-picker"> Selected Image: </label>
+        <select id="image-picker" disabled>
+            <option value="">No images added</option>
+        </select>
+        <fieldset id="controls" disabled>
+            <h2>Image Adjustments</h2>
+            <h2>X <input id="x" type="range" min="-300" max="300" value="0"></h2>
+            <h2>Y <input id="y" type="range" min="-300" max="300" value="0"></h2>
+            <h2>Scale <input id="scale" type="range" min="0.1" max="3" step="0.1" value="1"></h2>
+            <h2>Skew X <input id="skewX" type="range" min="-45" max="45" value="0"></h2>
+            <h2>Skew Y <input id="skewY" type="range" min="-45" max="45" value="0"></h2>
+        </fieldset>
+        <p id="status" role="status"></p>
+        <div id="frame" role="region" aria-label="Poster preview"></div>
+    </main>
 
     <script>
-        const object = document.querySelector("#img");
-
+        const upload = document.getElementById("img");
+        const frame = document.getElementById("frame");
+        const picker = document.getElementById("image-picker");
+        const adjustments = document.getElementById("controls");
+        const status = document.getElementById("status");
+        const images = new Map();
+        let selectedImage = null;
+        let nextId = 0;
         const controls = {
-            x: document.querySelector("#x"),
-            y: document.querySelector("#y"),
-            scale: document.querySelector("#scale"),
-            skewX: document.querySelector("#skewX"),
-            skewY: document.querySelector("#skewY")
+            x: document.getElementById("x"),
+            y: document.getElementById("y"),
+            scale: document.getElementById("scale"),
+            skewX: document.getElementById("skewX"),
+            skewY: document.getElementById("skewY")
         };
 
-        function update() {
-            object.style.transform = `
-            translate(${controls.x.value}px, ${controls.y.value}px)
-            scale(${controls.scale.value})
-            skew(${controls.skewX.value}deg, ${controls.skewY.value}deg)
-            `;
+        function renderImage(item) {
+            const { x, y, scale, skewX, skewY } = item.settings;
+            item.element.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px) scale(${scale}) skew(${skewX}deg, ${skewY}deg)`;
         }
 
-        Object.values(controls).forEach(control => {
-            control.addEventListener("input", update);
+        function selectImage(id) {
+            selectedImage = images.get(id);
+            images.forEach((item) => {
+                const selected = item === selectedImage;
+                item.element.classList.toggle("selected", selected);
+                item.element.setAttribute("aria-pressed", String(selected));
+            });
+            picker.value = id;
+            adjustments.disabled = false;
+            Object.entries(controls).forEach(([name, control]) => {
+                control.value = selectedImage.settings[name];
+            });
+        }
+
+        Object.entries(controls).forEach(([name, control]) => {
+            control.addEventListener("input", () => {
+                if (!selectedImage) return;
+                selectedImage.settings[name] = Number(control.value);
+                renderImage(selectedImage);
+            });
         });
 
-        update();
+        document.getElementById("add-image").addEventListener("click", () => upload.click());
+        picker.addEventListener("change", () => selectImage(picker.value));
+
+        upload.addEventListener("change", async () => {
+            const files = Array.from(upload.files);
+            // Allow choosing the same file again in a later upload.
+            upload.value = "";
+            status.textContent = "";
+
+            for (const file of files) {
+                if (file.type && !file.type.startsWith("image/")) {
+                    status.textContent += `${file.name} is not an image. `;
+                    continue;
+                }
+
+                const image = new Image();
+                const url = URL.createObjectURL(file);
+                try {
+                    await new Promise((resolve, reject) => {
+                        image.onload = resolve;
+                        image.onerror = reject;
+                        image.src = url;
+                    });
+                } catch {
+                    status.textContent += `${file.name} could not be opened. Try a PNG, JPEG, or WebP image. `;
+                    continue;
+                } finally {
+                    URL.revokeObjectURL(url);
+                }
+
+                const id = String(++nextId);
+                image.className = "object";
+                image.alt = file.name;
+                image.tabIndex = 0;
+                image.draggable = false;
+                image.setAttribute("role", "button");
+                image.setAttribute("aria-label", `Select ${file.name}`);
+                image.addEventListener("click", () => selectImage(id));
+                image.addEventListener("keydown", (event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        selectImage(id);
+                    }
+                });
+
+                const item = {
+                    element: image,
+                    settings: { x: 0, y: 0, scale: 1, skewX: 0, skewY: 0 }
+                };
+                if (images.size === 0) picker.replaceChildren();
+                images.set(id, item);
+                picker.add(new Option(`${id}. ${file.name}`, id));
+                picker.disabled = false;
+                frame.appendChild(image);
+                renderImage(item);
+                selectImage(id);
+            }
+        });
     </script>
 </body>
 </html>
