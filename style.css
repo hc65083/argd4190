@@ -105,7 +105,7 @@ nav img {
     display: block;
     padding: 8px 12px;
     font-family: "Choco", sans-serif;
-    font-size: 2rem;
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
     color:rgb(255, 224, 171);
     line-height: 1.2;
 }
