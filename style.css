@@ -153,3 +153,69 @@ a:hover {
     border-radius:3vw;
     background-color: beige;
 }
+
+#window p {
+    margin-bottom: 1vw;
+    margin-top: -1vw;
+}
+
+#window h2 {
+    margin-top: 2vw;
+}
+
+#quiz {
+    font-family: "Choco", sans-serif;
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    color: rgb(46, 25, 4);
+}
+
+#quiz .row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#quiz .scale {
+    display: flex;
+    justify-content: center;
+}
+
+#quiz .lab {
+    flex: 1;
+    text-align: center;
+}
+
+#quiz .lab.r {
+    text-align: center;
+}
+
+.q {
+    margin-bottom: 2rem;
+}
+
+#quiz input[type="radio"] {
+    width: 2em;
+    height: 2em;
+    accent-color: rgb(240, 91, 134);
+    cursor: pointer;
+}
+
+.credit {
+    font-family: "Choco", ui-rounded;
+    margin-top: 5vw; 
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    line-height: 2vw;
+}
+
+#window {
+    height: 50vw;
+    overflow-y: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#err,#result {
+    display: none;
+    font-size: clamp(3rem, 4vw + 0.5rem, 5rem);
+    font-family: "Choco", sans-serif;
+}

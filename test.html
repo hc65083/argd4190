@@ -24,10 +24,12 @@
 
     <h1>MBTI Test</h1>
     <div id="window">
-        <h1>Which type are you?</h1>
+        <h2>Which type are you?</h2>
         <p>For each pair, choose what describes you best.</p>
         <div id="quiz"></div>
-        <button id="submit">See my type</button>
+        <button id="submit">Submit</button>
+        
+        
         <div id="err">Please answer every question.</div>
         <div id="result"><div>Your type</div><div id="type"></div></div>
 
@@ -96,7 +98,6 @@ function score(answers) {
     for (const [q, sign] of Object.entries(terms)) s += sign * answers[q];
     out[axis] = s;
   }
-  // More than 24 -> E, N, T, P; otherwise I, S, F, J
   return (out.IE > 24 ? "E" : "I") + (out.SN > 24 ? "N" : "S") +
          (out.FT > 24 ? "T" : "F") + (out.JP > 24 ? "P" : "J");
 }
