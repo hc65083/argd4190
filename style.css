@@ -179,7 +179,8 @@ a:hover {
 }
 
 #sets h2 {
-margin-top:4vw;
+    margin-top:4vw;
+    font-size: clamp(2rem, 2vw + 0.5rem, 4vw);
 }
 
 #slideshow img {
