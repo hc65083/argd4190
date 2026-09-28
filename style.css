@@ -195,6 +195,17 @@ a:hover {
 
 .steps {
     margin-top: 4vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.step {
+    margin-top: 4vw;
+}
+
+.step p {
+    margin-top: 1.5vw;
+    line-height: 3vw;
 }
 
 #window {
