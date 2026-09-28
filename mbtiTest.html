@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Type Quiz</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <p><a href="steps.html">Steps</a></p>
+            <div class="dropdown">
+                <p><a href="test.html">Sets</a></p>
+                <ul class="dropdown-menu">
+                    <li><a href="mbtiTest.html">MBTI</a></li>
+                    <li><a href="zodiacTest.html">Zodiac</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <p><a href="sets.html">Sets</a></p>
+                <ul class="dropdown-menu">
+                    <li><a href="mbti.html">MBTI</a></li>
+                    <li><a href="zodiac.html">Zodiac</a></li>
+                </ul>
+            </div>            
+            <p><a href="print.html">Print</a></p>
+        </div>
+    </nav>
+
+    <h1 id="title">MBTI Test</h1>
+    <div id="window">
+        <h2>Which type are you?</h2>
+        <p>For each pair, choose what describes you best.</p>
+        <div id="quiz"></div>
+        <button id="submit">Submit</button>
+        
+        
+        <div id="err">Please answer every question.</div>
+        <div id="result"><div>Your type</div><div id="type"></div></div>
+
+        <p class="credit">Based on the Open Extended Jungian Type Scales 1.2 by Eric Jorgenson (openpsychometrics.org),
+        licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Not the MBTI and not affiliated with it.
+        No guarantee of accuracy.</p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+const Q = [
+  ["makes lists","relies on memory"],
+  ["sceptical","wants to believe"],
+  ["bored by time alone","needs time alone"],
+  ["accepts things as they are","unsatisfied with the ways things are"],
+  ["keeps a clean room","just puts stuff where ever"],
+  ["thinks \"robotic\" is an insult","strives to have a mechanical mind"],
+  ["energetic","mellow"],
+  ["prefer to take multiple choice test","prefer essay answers"],
+  ["chaotic","organized"],
+  ["easily hurt","thick-skinned"],
+  ["works best in groups","works best alone"],
+  ["focused on the present","focused on the future"],
+  ["plans far ahead","plans at the last minute"],
+  ["wants people's respect","wants their love"],
+  ["gets worn out by parties","gets fired up by parties"],
+  ["fits in","stands out"],
+  ["keeps options open","commits"],
+  ["wants to be good at fixing things","wants to be good at fixing people"],
+  ["talks more","listens more"],
+  ["when describing an event, will tell people what happened","when describing an event, will tell people what it meant"],
+  ["gets work done right away","procrastinates"],
+  ["follows the heart","follows the head"],
+  ["stays at home","goes out on the town"],
+  ["wants the big picture","wants the details"],
+  ["improvises","prepares"],
+  ["bases morality on justice","bases morality on compassion"],
+  ["finds it difficult to yell very loudly","yelling to others when they are far away comes naturally"],
+  ["theoretical","empirical"],
+  ["works hard","plays hard"],
+  ["uncomfortable with emotions","values emotions"],
+  ["likes to perform in front of other people","avoids public speaking"],
+  ["likes to know \"who?\", \"what?\", \"when?\"","likes to know \"why?\""]
+];
+
+const SCORING = {
+  IE: { base:30, terms:{3:-1, 7:-1, 11:-1, 15:+1, 19:-1, 23:+1, 27:+1, 31:-1} },
+  SN: { base:12, terms:{4:+1, 8:+1, 12:+1, 16:+1, 20:+1, 24:-1, 28:-1, 32:+1} },
+  FT: { base:30, terms:{2:-1, 6:+1, 10:+1, 14:-1, 18:-1, 22:+1, 26:-1, 30:-1} },
+  JP: { base:18, terms:{1:+1, 5:+1, 9:-1, 13:+1, 17:-1, 21:+1, 25:-1, 29:+1} }
+};
+
+const quiz = document.getElementById("quiz");
+Q.forEach(([l, r], i) => {
+  const n = i + 1;
+  let radios = "";
+  for (let v = 1; v <= 5; v++)
+    radios += `<label><input type="radio" name="q${n}" value="${v}" aria-label="${v}"></label>`;
+  quiz.insertAdjacentHTML("beforeend",
+    `<div class="q"><div class="row"><div class="lab">${l}</div><div class="scale">${radios}</div><div class="lab r">${r}</div></div></div>`);
+});
+
+function score(answers) {
+  const out = {};
+  for (const [axis, { base, terms }] of Object.entries(SCORING)) {
+    let s = base;
+    for (const [q, sign] of Object.entries(terms)) s += sign * answers[q];
+    out[axis] = s;
+  }
+  return (out.IE > 24 ? "E" : "I") + (out.SN > 24 ? "N" : "S") +
+         (out.FT > 24 ? "T" : "F") + (out.JP > 24 ? "P" : "J");
+}
+
+document.getElementById("submit").addEventListener("click", () => {
+  const answers = {};
+  for (let n = 1; n <= 32; n++) {
+    const c = document.querySelector(`input[name="q${n}"]:checked`);
+    if (!c) { document.getElementById("err").style.display = "block"; return; }
+    answers[n] = +c.value;
+  }
+  document.getElementById("err").style.display = "none";
+  document.getElementById("type").textContent = score(answers);
+  const box = document.getElementById("result");
+  box.style.display = "block";
+  box.scrollIntoView({ behavior: "smooth" });
+});
+</script>
+        
+</body>
+</html>
