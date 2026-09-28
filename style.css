@@ -25,7 +25,7 @@ h2 {
     color: rgb(240, 91, 134);
 }
 
-nav div {
+nav > div {
     margin-top: -5vw;  
     margin-left: -3vw; 
     margin-right: -3vw; 
