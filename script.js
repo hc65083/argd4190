@@ -41,8 +41,8 @@ fetch("collection.json")
       card.className = "card";
 
       card.innerHTML = `
-        <img src="${item.Picture}" alt="${item.Name}">
-        <h2>${item.Series}</h2>
+        <img src="${item.Picture}">
+        <h2>${item.Name}</h2>
         <p>${item.Gender} · ${item.Class}· ${item.Characteristics}</p>
       `;
 
