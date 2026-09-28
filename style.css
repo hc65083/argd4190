@@ -339,6 +339,7 @@ a:hover {
     text-align: center;
     width: 320px;
     margin-top: 4vw;
+    margin-inline: auto;
 }
 
 .calculator input {
