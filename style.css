@@ -71,6 +71,43 @@ nav img {
     align-items: center;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 150px;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    background: rgb(255, 224, 171);
+    border: 3px solid rgb(240, 91, 134);
+    border-radius: 12px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    font-family: "Choco", sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus-visible {
+    background: rgb(186, 245, 255);
+    border-radius: 6px;
+}
 
 header {
     margin-top: 13vw;
