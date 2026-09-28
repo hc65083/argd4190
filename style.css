@@ -159,12 +159,14 @@ a:hover {
 }
 
 #window p {
-    margin-bottom: 1vw;
+    margin-bottom: 4vw;
     margin-top: -1vw;
+    margin-left: 3vw;
 }
 
 #window h2 {
     margin-top: 2vw;
+    margin-left: 3vw;
 }
 #submit {
     margin-inline: auto;
@@ -219,6 +221,7 @@ a:hover {
     margin-top: 5vw; 
     font-size: clamp(1rem, 2vw + 1rem, 3rem);
     line-height: 2vw;
+    margin-left: 3vw;
 }
 
 #window {
