@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Type Quiz</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+</head>
+    <nav>
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <p><a href="steps.html">Steps</a></p>
+            <div class="dropdown">
+                <p><a href="test.html">Tests</a></p>
+                <ul class="dropdown-menu">
+                    <li><a href="mbtiTest.html">MBTI</a></li>
+                    <li><a href="zodiacTest.html">Zodiac</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <p><a href="sets.html">Sets</a></p>
+                <ul class="dropdown-menu">
+                    <li><a href="mbti.html">MBTI</a></li>
+                    <li><a href="zodiac.html">Zodiac</a></li>
+                </ul>
+            </div>            
+            <p><a href="print.html">Print</a></p>
+        </div>
+    </nav>
+    <body>
+        <div class="calculator">
+            <h1>Zodiac Calculator</h1>
+
+            <p>Enter your birthday:</p>
+
+            <input type="date" id="birthday">
+
+            <button onclick="calculateZodiac()">
+            Reveal My Zodiac
+            </button>
+
+            <div id="myZodiac"></div>
+        </div>
+
+        <script>
+        function calculateZodiac() {
+            const birthday = document.getElementById("birthday").value;
+            const myZodiac = document.getElementById("myZodiac");
+
+            if (!birthday) {
+                myZodiac.textContent = "Please enter your birthday.";
+                return;
+            }
+
+            const [year, monthString, dayString] = birthday.split("-");
+            const month = Number(monthString);
+            const day = Number(dayString);
+
+            let zodiacSign = "";
+
+            if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+                zodiacSign = "Aries";
+            } 
+            else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+                zodiacSign = "Taurus";
+            } 
+            else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+                zodiacSign = "Gemini";
+            } 
+            else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+                zodiacSign = "Cancer";
+            } 
+            else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+                zodiacSign = "Leo";
+            } 
+            else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+                zodiacSign = "Virgo";
+            } 
+            else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+                zodiacSign = "Libra";
+            } 
+            else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+                zodiacSign = "Scorpio";
+            } 
+            else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+                zodiacSign = "Sagittarius";
+            } 
+            else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+                zodiacSign = "Capricorn";
+            } 
+            else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+                zodiacSign = "Aquarius";
+            } 
+            else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+                zodiacSign = "Pisces";
+            }
+
+            myZodiac.textContent = `Your zodiac sign is ${zodiacSign}!`;
+        }
+        </script>
+    </body>
+</html>

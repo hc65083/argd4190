@@ -332,3 +332,51 @@ a:hover {
     height: 25vw;
     object-fit: cover;
 }
+
+.calculator {
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 320px;
+    margin-top: 4vw;
+}
+
+.calculator input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 8px;
+      font-size: 2vw;
+ }
+
+.calculator button {
+      width: 100%;
+      min-height: 70px;
+      box-sizing: border-box;
+      padding: 3vw;
+      margin-top: 12px;
+      border-radius: 8px;
+      font-size: clamp(2.5rem, 3vw, 4rem);;
+ }
+ 
+input {
+    border: 1px solid #ccc;
+}
+
+button {
+    background: rgb(240, 91, 134);
+    color: rgb(255, 224, 171);
+}
+
+button:hover {
+    background: rgb(248, 130, 163);;
+}
+
+#myZodiac {
+    margin-top: 4vw;
+    font-size: clamp(4rem, 4vw, 7rem);;
+    color: rgb(240, 91, 134);
+    font-family: "Choco", sans-serif;
+    line-height: 4vw;
+}
