@@ -42,7 +42,7 @@ nav > div {
 }
 
 @media screen and (max-width: 750px) {
-    nav div {
+    nav > div {
         border-radius:2vw;
         height:10vw;
         gap:8vw;
@@ -73,6 +73,11 @@ nav img {
 
 .dropdown {
     position: relative;
+    margin-top: -2.5vw;
+}
+
+.dropdown > p {
+    margin: 0;
 }
 
 .dropdown-menu {
