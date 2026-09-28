@@ -1,0 +1,226 @@
+[
+  {
+    "Name": "Thea",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "INTP",
+    "Characteristics": "Logical, Curious Thoughtful",
+    "Picture": "mbti/thea.jpg"
+  },
+  {
+    "Name": "Benji (Benjamin)",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "INTJ",
+    "Characteristics": "Strategic, Independent, Analytical",
+    "Picture": "mbti/benji.jpg"
+  },
+  {
+    "Name": "Leo (Leonardo)",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "ENTJ",
+    "Characteristics": "Ambitious, Decisive, Leader",
+    "Picture": "mbti/leo.jpg"
+  },
+  {
+    "Name": "Becky",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "ENTP",
+    "Characteristics": "Clever, Inventive, Rebellious",
+    "Picture": "mbti/becky.jpg"
+  },
+  {
+    "Name": "Anna (Annabelle)",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "INFJ",
+    "Characteristics": "Calm, Idealistic, Empathetic",
+    "Picture": "mbti/anna.jpg"
+  },
+  {
+    "Name": "Sage",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "INFP",
+    "Characteristics": "Imaginative, Sensitive, Authentic",
+    "Picture": "mbti/sage.jpg"
+  },
+  {
+    "Name": "Noah",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "ENFJ",
+    "Characteristics": "Charismastic, Warm, People Oriented",
+    "Picture": "mbti/noah.jpg"
+  },
+  {
+    "Name": "Carol (Carolina)",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "ENFP",
+    "Characteristics": "Imaginative, Bright, Spontaneous",
+    "Picture": "mbti/carol.jpg"
+  },
+  {
+    "Name": "Monak",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "ISTJ",
+    "Characteristics": "Reliable, Practical, Responsible",
+    "Picture": "mbti/monak.jpg"
+  },
+  {
+    "Name": "Ellie",
+    "Series": "Male",
+    "Gender": "Female",
+    "Class": "ISFJ",
+    "Characteristics": "Caring, Loyal, Observant",
+    "Picture": "mbti/ellie.jpg"
+  },
+  {
+    "Name": "Kalem",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "ESTJ",
+    "Characteristics": "Practical, Hardworking, Organized",
+    "Picture": "mbti/kalem.jpg"
+  },
+  {
+    "Name": "Fiona",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "ESFJ",
+    "Characteristics": "Fun, Social, Aware",
+    "Picture": "mbti/fiona.jpg"
+  },
+  {
+    "Name": "Vanessa",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "ISTP",
+    "Characteristics": "Adaptable, Calm, Independent",
+    "Picture": "mbti/vanessa.jpg"
+  },
+  {
+    "Name": "Kiwi",
+    "Series": "MBTI",
+    "Gender": "Female",
+    "Class": "ESFP",
+    "Characteristics": "Fun, Social, Spontaneous",
+    "Picture": "mbti/kiwi.jpg"
+  },
+  {
+    "Name": "Ronaldo",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "ISFP",
+    "Characteristics": "Artistic, Sensory, Spontaneous",
+    "Picture": "mbti/ronaldo.jpg"
+  },
+  {
+    "Name": "Zack (Zachary)",
+    "Series": "MBTI",
+    "Gender": "Male",
+    "Class": "ESTP",
+    "Characteristics": "Bold, Energetic, Thrillseeking",
+    "Picture": "mbti/zack.jpg"
+  },
+  {
+    "Name": "Mittimi Mittmitti",
+    "Series": "Zodiac",
+    "Gender": "Lion",
+    "Class": "Leo",
+    "Characteristics": "Fun, Warm, Loving",
+    "Picture": ""
+  },
+  {
+    "Name": "Toothiti Totohini",
+    "Series": "Zodiac",
+    "Gender": "Water Bearer",
+    "Class": "Aquarius",
+    "Characteristics": "Restless, Creative, Egotistical",
+    "Picture": ""
+  },
+  {
+    "Name": "Googlyoogly Gogohoyo",
+    "Series": "Zodiac",
+    "Gender": "Scales",
+    "Class": "Libra",
+    "Characteristics": "Friendly, Ambivert, Childish",
+    "Picture": ""
+  },
+  {
+    "Name": "Bogo Boogoogy Bogoloo",
+    "Series": "Zodiac",
+    "Gender": "Twins",
+    "Class": "Gemini",
+    "Characteristics": "Spontaneous, Confusing, Funny",
+    "Picture": ""
+  },
+  {
+    "Name": "Hoagy Mogy Ho Ho Ho",
+    "Series": "Zodiac",
+    "Gender": "Archer",
+    "Class": "Sagittarius",
+    "Characteristics": "Loyal, Irritiable, Nervous",
+    "Picture": ""
+  },
+  {
+    "Name": "Trust Me Bro Hehehehe",
+    "Series": "Zodiac",
+    "Gender": "Fishes",
+    "Class": "Pisces",
+    "Characteristics": "Empathetic, Funnt, Secretive",
+    "Picture": ""
+  },
+  {
+    "Name": "Ricovado Avocadoo",
+    "Series": "Zodiac",
+    "Gender": "Virgin",
+    "Class": "Virgo",
+    "Characteristics": "Jealous, Indecisive, Intelligent",
+    "Picture": ""
+  },
+  {
+    "Name": "Lampapa Shade",
+    "Series": "Zodiac",
+    "Gender": "Scorpion",
+    "Class": "Scorpio",
+    "Characteristics": "Attractive, Envious, Loyal",
+    "Picture": ""
+  },
+  {
+    "Name": "El Colonel Guapo",
+    "Series": "Zodiac",
+    "Gender": "Goat",
+    "Class": "Capricorn",
+    "Characteristics": "Loving, Funny, Kind",
+    "Picture": ""
+  },
+  {
+    "Name": "Samuel Smiley",
+    "Series": "Zodiac",
+    "Gender": "Crab",
+    "Class": "Cancer",
+    "Characteristics": "Sarcastic, Lovable, Playful",
+    "Picture": ""
+  },
+  {
+    "Name": "Bang Bangle Billy",
+    "Series": "Zodiac",
+    "Gender": "Bull",
+    "Class": "Taurus",
+    "Characteristics": "Caring, Ambiverted, Ambitious",
+    "Picture": ""
+  },
+  {
+    "Name": "Cali li Flower",
+    "Series": "Zodiac",
+    "Gender": "Ram",
+    "Class": "Aries",
+    "Characteristics": "Loyal, Smart, Snappy",
+    "Picture": ""
+  }
+]
