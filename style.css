@@ -178,6 +178,10 @@ a:hover {
     color:rgb(240, 91, 134);
 }
 
+#sets h2 {
+margin-top:4vw;
+}
+
 #slideshow img {
     height: 20vw;
     width: auto;
