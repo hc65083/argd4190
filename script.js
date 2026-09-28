@@ -41,9 +41,9 @@ fetch("collection.json")
       card.className = "card";
 
       card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
-        <h2>${item.name}</h2>
-        <p>${item.year} · ${item.artist}</p>
+        <img src="${item.Picture}" alt="${item.Name}">
+        <h2>${item.Series}</h2>
+        <p>${item.Gender} · ${item.Class}· ${item.Characteristics}</p>
       `;
 
       gallery.appendChild(card);
