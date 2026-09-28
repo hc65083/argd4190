@@ -176,6 +176,7 @@ a:hover {
     font-family: "Choco", sans-serif;
     font-size: clamp(2.5rem, 3vw, 4rem);
     color: rgb(46, 25, 4);
+    line-height: 2vw;
 }
 
 #quiz .row {
