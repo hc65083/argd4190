@@ -144,6 +144,10 @@ a:hover {
     margin-top: 8vw;
 }
 
+.steps {
+    margin-top: 4vw;
+}
+
 #window {
     margin-top: 5vw;
     min-height: 400px;
@@ -161,6 +165,11 @@ a:hover {
 
 #window h2 {
     margin-top: 2vw;
+}
+#submit {
+    margin-inline: auto;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
 }
 
 #quiz {
@@ -198,6 +207,10 @@ a:hover {
     height: 2em;
     accent-color: rgb(240, 91, 134);
     cursor: pointer;
+}
+
+#title {
+    margin-top: 5vw;
 }
 
 .credit {
