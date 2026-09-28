@@ -243,9 +243,10 @@ a:hover {
 
 #gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 40%));
     margin-top: 4vw;
-    gap: 20px;
+    gap: 10vw;
+    justify-content: center;
 }
 
 .card {
@@ -253,6 +254,8 @@ a:hover {
     border: 3px solid rgb(240, 91, 134);
     padding: 5vw;
     border-radius: 8px;
+    height: 80%;
+    width: 70%;
 }
 
 .card p {
@@ -266,6 +269,6 @@ a:hover {
 .card img {
     border-radius: 8px;
     width: 100%;
-    height: 30vw;
+    height: 25vw;
     object-fit: cover;
 }
