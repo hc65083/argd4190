@@ -16,16 +16,32 @@ function loadGallery(galleryId, collectionFile, separator) {
         const card = document.createElement("div");
         card.className = "card";
 
-        // Picture is the image path from the JSON, e.g. "MBTI/thea.jpg".
+        const name = document.createElement("h2");
+        name.textContent = item.Class;
+
         if (item.Picture) {
+          const revealButton = document.createElement("button");
+          revealButton.type = "button";
+          revealButton.className = "card-image";
+          revealButton.setAttribute("aria-label", `Reveal ${item.Class} character`);
+
           const image = document.createElement("img");
           image.src = item.Picture;
-          image.alt = item.Name;
-          card.appendChild(image);
+          image.alt = `${item.Class} character`;
+          revealButton.appendChild(image);
+
+          // Native buttons also respond to Enter and Space.
+          revealButton.addEventListener("click", () => {
+            name.textContent = item.Name;
+            image.alt = item.Name;
+            revealButton.classList.add("is-revealed");
+            revealButton.setAttribute("aria-label", `${item.Name}'s image revealed`);
+            revealButton.setAttribute("aria-disabled", "true");
+          }, { once: true });
+
+          card.appendChild(revealButton);
         }
 
-        const name = document.createElement("h2");
-        name.textContent = item.Name;
         card.appendChild(name);
 
         const details = document.createElement("p");

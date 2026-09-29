@@ -334,6 +334,42 @@ a:hover {
     object-fit: cover;
 }
 
+.card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card-image:hover {
+    background: transparent;
+}
+
+.card-image img {
+    display: block;
+    filter: blur(12px);
+}
+
+.card-image.is-revealed img {
+    filter: none;
+}
+
+.card-image.is-revealed {
+    cursor: default;
+}
+
+.card-image:focus-visible {
+    outline: 3px solid rgb(240, 91, 134);
+    outline-offset: 4px;
+}
+
 .calculator {
     padding: 30px;
     border-radius: 16px;
