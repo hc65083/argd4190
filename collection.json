@@ -5,7 +5,7 @@
     "Gender": "Female",
     "Class": "INTP",
     "Characteristics": "Logical, Curious Thoughtful",
-    "Picture": "mbti/thea.jpg"
+    "Picture": "MBTI/thea.jpg"
   },
   {
     "Name": "Benji (Benjamin)",
@@ -13,7 +13,7 @@
     "Gender": "Male",
     "Class": "INTJ",
     "Characteristics": "Strategic, Independent, Analytical",
-    "Picture": "mbti/benji.jpg"
+    "Picture": "MBTI/benji.jpg"
   },
   {
     "Name": "Leo (Leonardo)",
@@ -21,7 +21,7 @@
     "Gender": "Male",
     "Class": "ENTJ",
     "Characteristics": "Ambitious, Decisive, Leader",
-    "Picture": "mbti/leo.jpg"
+    "Picture": "MBTI/leo.jpg"
   },
   {
     "Name": "Becky",
@@ -29,7 +29,7 @@
     "Gender": "Female",
     "Class": "ENTP",
     "Characteristics": "Clever, Inventive, Rebellious",
-    "Picture": "mbti/becky.jpg"
+    "Picture": "MBTI/becky.jpg"
   },
   {
     "Name": "Anna (Annabelle)",
@@ -37,7 +37,7 @@
     "Gender": "Female",
     "Class": "INFJ",
     "Characteristics": "Calm, Idealistic, Empathetic",
-    "Picture": "mbti/anna.jpg"
+    "Picture": "MBTI/anna.jpg"
   },
   {
     "Name": "Sage",
@@ -45,7 +45,7 @@
     "Gender": "Female",
     "Class": "INFP",
     "Characteristics": "Imaginative, Sensitive, Authentic",
-    "Picture": "mbti/sage.jpg"
+    "Picture": "MBTI/sage.jpg"
   },
   {
     "Name": "Noah",
@@ -53,7 +53,7 @@
     "Gender": "Male",
     "Class": "ENFJ",
     "Characteristics": "Charismastic, Warm, People Oriented",
-    "Picture": "mbti/noah.jpg"
+    "Picture": "MBTI/noah.jpg"
   },
   {
     "Name": "Carol (Carolina)",
@@ -61,7 +61,7 @@
     "Gender": "Female",
     "Class": "ENFP",
     "Characteristics": "Imaginative, Bright, Spontaneous",
-    "Picture": "mbti/carol.jpg"
+    "Picture": "MBTI/carol.jpg"
   },
   {
     "Name": "Monak",
@@ -69,7 +69,7 @@
     "Gender": "Male",
     "Class": "ISTJ",
     "Characteristics": "Reliable, Practical, Responsible",
-    "Picture": "mbti/monak.jpg"
+    "Picture": "MBTI/monak.jpg"
   },
   {
     "Name": "Ellie (Elizabeth)",
@@ -77,7 +77,7 @@
     "Gender": "Female",
     "Class": "ISFJ",
     "Characteristics": "Caring, Loyal, Observant",
-    "Picture": "mbti/ellie.jpg"
+    "Picture": "MBTI/ellie.jpg"
   },
   {
     "Name": "Kalem",
@@ -85,7 +85,7 @@
     "Gender": "Male",
     "Class": "ESTJ",
     "Characteristics": "Practical, Hardworking, Organized",
-    "Picture": "mbti/kalem.jpg"
+    "Picture": "MBTI/kalem.jpg"
   },
   {
     "Name": "Fiona",
@@ -93,7 +93,7 @@
     "Gender": "Female",
     "Class": "ESFJ",
     "Characteristics": "Fun, Social, Aware",
-    "Picture": "mbti/fiona.jpg"
+    "Picture": "MBTI/fiona.jpg"
   },
   {
     "Name": "Vanessa",
@@ -101,7 +101,7 @@
     "Gender": "Female",
     "Class": "ISTP",
     "Characteristics": "Adaptable, Calm, Independent",
-    "Picture": "mbti/vanessa.jpg"
+    "Picture": "MBTI/vanessa.jpg"
   },
   {
     "Name": "Kiwi",
@@ -109,7 +109,7 @@
     "Gender": "Female",
     "Class": "ESFP",
     "Characteristics": "Fun, Social, Spontaneous",
-    "Picture": "mbti/kiwi.jpg"
+    "Picture": "MBTI/kiwi.jpg"
   },
   {
     "Name": "Ronaldo",
@@ -117,7 +117,7 @@
     "Gender": "Male",
     "Class": "ISFP",
     "Characteristics": "Artistic, Sensory, Spontaneous",
-    "Picture": "mbti/ronaldo.jpg"
+    "Picture": "MBTI/ronaldo.jpg"
   },
   {
     "Name": "Zack (Zachary)",
@@ -125,6 +125,6 @@
     "Gender": "Male",
     "Class": "ESTP",
     "Characteristics": "Bold, Energetic, Thrillseeking",
-    "Picture": "mbti/zack.jpg"
+    "Picture": "MBTI/zack.jpg"
   }
 ]
