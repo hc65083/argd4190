@@ -39,6 +39,7 @@ nav > div {
     padding: 3vw 3vw 3vw 3vw;
     align-items:center;
     flex-wrap: wrap;
+    
 }
 
 @media screen and (max-width: 750px) {
@@ -46,12 +47,13 @@ nav > div {
         border-radius:2vw;
         height:10vw;
         gap:8vw;
+        row-gap: 1px;
+        padding-bottom: 10vw;
     }
     
     nav img {
         margin-top: 0vw; 
     }
-
 }
 
 nav p {
